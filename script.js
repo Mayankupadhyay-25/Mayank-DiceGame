@@ -24,3 +24,8 @@ const press = ()=>{
         default: headingEle.innerHTML = "Something wrong happened"            
     }
 }
+document.body.addEventListener("keypress",(event)=>{
+    if(event.key === ' '){
+        press()
+    }
+})
